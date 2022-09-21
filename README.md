@@ -74,4 +74,4 @@ db.blogs.find({
 
  ## Find all blogs where the createdAt type is a date
 
-db.blogs.find({ "createdAt": {$type: "date"} })
+db.blogs.find({ createdAt: {$type: "date"} })
