@@ -2,7 +2,7 @@
 
 ## Insert sample blogs (only one is included in the README per James)
 
-# Discuss converting datatypes in MongoDB.
+#### Discuss converting datatypes in MongoDB.
 
 db.blogs.insertMany([
 	{
@@ -42,7 +42,7 @@ db.blogs.find({
    .sort({_id:-1})
    .limit(100)
 
-## Find all blogs whose objectId is greater than 5
+## Find all blogs whose objectId is greater than 5.
 
 db.blogs.find({
     objectId: { $gt: 5 }
@@ -53,7 +53,7 @@ db.blogs.find({
 
 ## Find all blogs whose createdAt is after April 1, 2022
 
-# Discuss changing data types on this one as well.
+#### Discuss changing data types on this one as well.
 
 db.blogs.find({
     createdAt: {$gt: 2022-04-01}
@@ -64,7 +64,7 @@ db.blogs.find({
 
 ## Find all blogs where the field lastModified exists
 
-# Discuss. Only 8 out of 10 showed up in Mongo. All ten had the lastModified field.
+#### Discuss. Only 8 out of 10 showed up in Mongo. All ten had the lastModified field.
 
 db.blogs.find({
     lastModified: {
